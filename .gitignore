@@ -3,8 +3,6 @@
 __pycache__/
 
 images/
-images_small/
-uploads/
 
 embeddings.pkl
 filenames.pkl
