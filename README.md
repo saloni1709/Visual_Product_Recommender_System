@@ -12,6 +12,15 @@ This project demonstrates the practical application of **Computer Vision**, **De
 
 ---
 
+---
+
+# 🌐 Live Demo
+
+🔗 https://visualappuctrecommendersystem-dt8apaxvnqw67vafjskbnh.streamlit.app/
+
+---
+
+
 # 🚀 Features
 
 - Upload an image through a Streamlit web interface
