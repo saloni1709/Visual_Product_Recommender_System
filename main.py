@@ -27,11 +27,10 @@ model = tensorflow.keras.Sequential([
     GlobalMaxPooling2D()
 ])
 
-st.title("👕 Fashion Recommender System")
+st.title("Visual Recommender System")
 
-# -------------------------------
+
 # Save Uploaded Image
-# -------------------------------
 def save_uploaded_file(uploaded_file):
     try:
         os.makedirs("uploads", exist_ok=True)
@@ -48,9 +47,8 @@ def save_uploaded_file(uploaded_file):
         return None
 
 
-# -------------------------------
+
 # Feature Extraction
-# -------------------------------
 def feature_extraction(img_path, model):
 
     img = image.load_img(img_path, target_size=(224, 224))
@@ -66,9 +64,7 @@ def feature_extraction(img_path, model):
     return normalized_result
 
 
-# -------------------------------
 # Recommendation Function
-# -------------------------------
 def recommend(features, feature_list):
 
     neighbors = NearestNeighbors(
@@ -84,9 +80,7 @@ def recommend(features, feature_list):
     return indices
 
 
-# -------------------------------
 # Upload Image
-# -------------------------------
 uploaded_file = st.file_uploader(
     "Choose an Image",
     type=['png', 'jpg', 'jpeg']
